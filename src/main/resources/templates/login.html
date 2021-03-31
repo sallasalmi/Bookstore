@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" th:href="@{css/bootstrap.min.css}" />
+<head>
+	<title>Booklist</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	
+</head>
+<body>
+	<h2>Login</h2>
+	<div>
+	<form th:action="@{/login}" method="post">
+		<div><label> User Name : <input type="text" name="username"/> </label></div>
+		<div><label> Password: <input type="password" name="password"/> </label></div>
+		<div><input type="submit" value="Sign In"/></div>
+	</form>
+	</div>
+	
+</body>
+</html>
